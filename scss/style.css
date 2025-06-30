@@ -432,7 +432,7 @@ html {
   box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
 }
 .content__body .community-updates__card-info p {
-  width: 28.5rem;
+  width: 27rem;
   text-align: center;
 }
 .content__body .community-updates__card-info button {
@@ -442,6 +442,49 @@ html {
   align-items: center;
   gap: 0.8rem;
   align-self: stretch;
+}
+
+.footer {
+  margin-top: 16rem;
+}
+.footer__top {
+  display: flex;
+  padding: 3.2rem 0rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+.footer__top p {
+  width: 88.7rem;
+  text-align: center;
+}
+.footer__content {
+  background: #263238;
+  display: flex;
+  padding: 6.4rem 16.5rem;
+  align-items: flex-start;
+  gap: 12.5rem;
+}
+.footer__content-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+.footer__content-left .footer__copyright-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: #717171;
+}
+.footer__content-left .footer__copyright-info p {
+  width: 35rem;
+}
+.footer__content-left .footer__social-icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
