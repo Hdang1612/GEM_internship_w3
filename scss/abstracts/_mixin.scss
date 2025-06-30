@@ -1,0 +1,43 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// @mixin headline($fsize, $fweight, $lineheight) {
+//   color: $neutral-black;
+//   font-size: $fsize;
+//   font-style: normal;
+//   font-weight: $fweight;
+//   line-height: $lineheight;
+// }
+
+@mixin text-style($color, $fsize, $fstyle, $fstyle, $lheight) {
+  color: $color;
+  font-size: $fsize;
+  font-style: $fstyle;
+  font-weight: $fstyle;
+  line-height: $lheight;
+}
+
+@mixin button-style($bg-color, $text-color) {
+  display: inline-flex;
+  padding: 1.6rem 3.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 0.4rem;
+  background: $bg-color;
+  color: $text-color;
+}
+
+@mixin shadow($v-offset, $blur, $color) {
+  border-radius: 1rem;
+  box-shadow: 0px $v-offset $blur 0px $color;
+}

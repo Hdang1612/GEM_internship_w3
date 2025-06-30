@@ -1,0 +1,136 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headline1 {
+  color: #263238;
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 7.6rem;
+}
+
+.headline2 {
+  color: #263238;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.4rem; /* 122.222% */
+}
+
+.headline3 {
+  color: #263238;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.6rem; /* 122.222% */
+}
+
+.headline4 {
+  color: #263238;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.8rem; /* 122.222% */
+}
+
+.body1--regular {
+  color: #263238;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+.body2--regular {
+  color: #263238;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.body3--regular {
+  color: #263238;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.body4--regular {
+  color: #263238;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.body1--medium {
+  color: #263238;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+
+.body2--medium {
+  color: #263238;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
+.body3--medium {
+  color: #263238;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.body4--medium {
+  color: #263238;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  padding: 0 9rem;
+}
+
+.header {
+  width: 100%;
+  padding: 3rem 10.5rem;
+}
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

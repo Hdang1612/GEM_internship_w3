@@ -1,0 +1,28 @@
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
+
+.btn {
+  &__primary {
+    &--default {
+      @include button-style($primary-color, #fff);
+    }
+    &--hover {
+      @include button-style($primary-color, #fff);
+    }
+    &--focus {
+      @include button-style($primary-color, #fff);
+      border: 2px solid $neutral-d-grey;
+    }
+    &--click {
+      @include button-style($shade-2, #fff);
+    }
+    &--disable {
+      @include button-style($neutral-silver, $neutral-grey-blue);
+    }
+  }
+  &__tertiary {
+    &--default {
+      @include button-style($neutral-white$primary-color);
+    }
+  }
+}
