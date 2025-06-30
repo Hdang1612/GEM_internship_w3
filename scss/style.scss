@@ -13,7 +13,6 @@
 html {
   font-size: 10px;
   font-family: $font-family-base;
-  // padding: 0 9rem;
   background-color: $neutral-silver;
 }
 
@@ -51,5 +50,177 @@ html {
   }
   &__sub-heading {
     margin: 1.6rem 0 3.6rem 0;
+  }
+}
+
+.content {
+  padding: 0 14.4rem;
+  .clients-logo {
+    height: 9.8rem;
+  }
+
+  .community {
+    &__card-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__card {
+      display: flex;
+      width: 29.9rem;
+      padding: 2.4rem 3.2rem;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.8rem;
+      flex-shrink: 0;
+      @include shadow(2px, 4px, rgba(171, 190, 209, 0.2));
+    }
+    &__card-img {
+      margin-bottom: 1.6rem;
+    }
+    &__card-img {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__body {
+    .section {
+      margin-top: 4.8rem;
+    }
+
+    .unlock,
+    .calenders {
+      &__img {
+        padding: 5.2rem 0;
+      }
+      &__text {
+        width: 66rem;
+      }
+      &__heading {
+        margin-bottom: 1.6rem;
+      }
+      &__sub-heading {
+        margin-bottom: 3.2rem;
+      }
+    }
+
+    .achievements {
+      &__text {
+        display: flex;
+        width: 54rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        flex-shrink: 0;
+      }
+      &__heading {
+        width: 40rem;
+        span {
+          color: $primary-color;
+        }
+      }
+      &__counts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem 3rem;
+        width: 54rem;
+      }
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+      }
+    }
+
+    .customers {
+      display: flex;
+      gap: 7.8rem;
+      &__img {
+        img {
+          width: 32.6rem;
+          height: 32.6rem;
+          flex-shrink: 0;
+          border-radius: 0.8rem;
+          object-fit: cover;
+          @include shadow(8px, 16px, rgba(171, 190, 209, 0.4));
+        }
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.2rem;
+        flex: 1 0 0;
+      }
+
+      &__comment {
+        margin-bottom: 1.6rem;
+        color: $neutral-grey;
+      }
+      &__name {
+        color: $primary-color;
+      }
+      &__role {
+        color: $neutral-l-grey;
+      }
+      &__text-footer {
+        width: 100%;
+        gap: 3.2rem;
+      }
+      &__icon {
+        gap: 4.1rem;
+      }
+    }
+
+    .community-updates {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.6rem;
+      &__content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        // gap: -9.6rem;
+        .community-updates__img img {
+          width: 36.8rem;
+          height: 28.6rem;
+          object-fit: cover;
+          border-radius: 0.8rem;
+        }
+      }
+      &__card-info {
+        position: absolute;
+        bottom: -9.6rem;
+        display: flex;
+        padding: 1.6rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+        border-radius: 0.8rem;
+        background: $neutral-silver;
+        @include shadow(8px, 16px, rgba(171, 190, 209, 0.4));
+        p {
+          width: 28.5rem;
+          text-align: center;
+        }
+        button {
+          display: flex;
+          padding: 0.8rem;
+          justify-content: center;
+          align-items: center;
+          gap: 0.8rem;
+          align-self: stretch;
+        }
+      }
+    }
   }
 }

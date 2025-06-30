@@ -15,6 +15,35 @@ a {
   align-items: center;
 }
 
+.section {
+  margin-top: 4rem;
+}
+.section__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+.section__heading {
+  color: #263238;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.4rem;
+  text-align: center;
+  max-width: 54.2rem;
+}
+.section__sub-heading {
+  color: #263238;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-align: center;
+  width: 62.8rem;
+}
+
 .shadow--sm {
   border-radius: 1rem;
   box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.6);
@@ -254,6 +283,165 @@ html {
 }
 .slider__sub-heading {
   margin: 1.6rem 0 3.6rem 0;
+}
+
+.content {
+  padding: 0 14.4rem;
+}
+.content .clients-logo {
+  height: 9.8rem;
+}
+.content .community__card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .community__card {
+  display: flex;
+  width: 29.9rem;
+  padding: 2.4rem 3.2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.8rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+}
+.content .community__card-img {
+  margin-bottom: 1.6rem;
+}
+.content .community__card-img {
+  margin-bottom: 1.6rem;
+}
+.content__body .section {
+  margin-top: 4.8rem;
+}
+.content__body .unlock__img,
+.content__body .calenders__img {
+  padding: 5.2rem 0;
+}
+.content__body .unlock__text,
+.content__body .calenders__text {
+  width: 66rem;
+}
+.content__body .unlock__heading,
+.content__body .calenders__heading {
+  margin-bottom: 1.6rem;
+}
+.content__body .unlock__sub-heading,
+.content__body .calenders__sub-heading {
+  margin-bottom: 3.2rem;
+}
+.content__body .achievements__text {
+  display: flex;
+  width: 54rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  flex-shrink: 0;
+}
+.content__body .achievements__heading {
+  width: 40rem;
+}
+.content__body .achievements__heading span {
+  color: #4caf4f;
+}
+.content__body .achievements__counts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem 3rem;
+  width: 54rem;
+}
+.content__body .achievements__item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.content__body .customers {
+  display: flex;
+  gap: 7.8rem;
+}
+.content__body .customers__img img {
+  width: 32.6rem;
+  height: 32.6rem;
+  flex-shrink: 0;
+  border-radius: 0.8rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
+}
+.content__body .customers__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.2rem;
+  flex: 1 0 0;
+}
+.content__body .customers__comment {
+  margin-bottom: 1.6rem;
+  color: #717171;
+}
+.content__body .customers__name {
+  color: #4caf4f;
+}
+.content__body .customers__role {
+  color: #89939e;
+}
+.content__body .customers__text-footer {
+  width: 100%;
+  gap: 3.2rem;
+}
+.content__body .customers__icon {
+  gap: 4.1rem;
+}
+.content__body .community-updates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+.content__body .community-updates__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.content__body .community-updates__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.content__body .community-updates__card .community-updates__img img {
+  width: 36.8rem;
+  height: 28.6rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+.content__body .community-updates__card-info {
+  position: absolute;
+  bottom: -9.6rem;
+  display: flex;
+  padding: 1.6rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  border-radius: 0.8rem;
+  background: #f5f7fa;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
+}
+.content__body .community-updates__card-info p {
+  width: 28.5rem;
+  text-align: center;
+}
+.content__body .community-updates__card-info button {
+  display: flex;
+  padding: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  align-self: stretch;
 }
 
 /*# sourceMappingURL=style.css.map */
