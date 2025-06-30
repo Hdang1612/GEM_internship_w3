@@ -4,17 +4,17 @@
 .btn {
   &__primary {
     &--default {
-      @include button-style($primary-color, #fff);
+      @include button-style($primary-color, $neutral-white);
     }
-    &--hover {
-      @include button-style($primary-color, #fff);
+    &:hover {
+      @include button-style($primary-color, neutral-white);
     }
     &--focus {
-      @include button-style($primary-color, #fff);
+      @include button-style($primary-color, neutral-white);
       border: 2px solid $neutral-d-grey;
     }
     &--click {
-      @include button-style($shade-2, #fff);
+      @include button-style($shade-2, neutral-white);
     }
     &--disable {
       @include button-style($neutral-silver, $neutral-grey-blue);
@@ -22,7 +22,10 @@
   }
   &__tertiary {
     &--default {
-      @include button-style($neutral-white$primary-color);
+      @include button-style($neutral-silver, $primary-color);
+    }
+    &:hover {
+      @include button-style($neutral-white, $primary-color);
     }
   }
 }

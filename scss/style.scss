@@ -2,6 +2,7 @@
 @use "abstracts/mixin" as *;
 @use "base/base" as *;
 @use "base/typo" as *;
+@use "components/button" as *;
 
 * {
   padding: 0;
@@ -12,7 +13,13 @@
 html {
   font-size: 10px;
   font-family: $font-family-base;
-  padding: 0 9rem;
+  // padding: 0 9rem;
+  background-color: $neutral-silver;
+}
+
+.container {
+  max-width: 144rem;
+  margin: auto;
 }
 
 .header {
@@ -27,5 +34,22 @@ html {
     }
   }
   &__nav-item {
+  }
+  &__regis {
+    display: flex;
+    gap: 1.4rem;
+  }
+}
+
+.slider {
+  gap: 10.4rem;
+  padding: 9.6rem 14.4rem;
+  &__heading {
+    span {
+      color: $primary-color;
+    }
+  }
+  &__sub-heading {
+    margin: 1.6rem 0 3.6rem 0;
   }
 }

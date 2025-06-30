@@ -13,46 +13,60 @@
     />
   </head>
   <body>
-    <div class="header flex-between">
-      <div class="header__logo">
-        <img src="./assets/full-logo.svg" alt="logo" />
-      </div>
-      <div class="header__nav">
-        <ul>
-          <li class="header__nav-item body2--regular"><a href="">Home</a></li>
-          <li class="header__nav-item body2--regular">
-            <a href="">Service</a>
-          </li>
-          <li class="header__nav-item body2--regular">
-            <a href="">Feature</a>
-          </li>
-          <li class="header__nav-item body2--regular">
-            <a href="">Product</a>
-          </li>
-          <li class="header__nav-item body2--regular">
-            <a href="">Testimonial</a>
-          </li>
-          <li class="header__nav-item body2--regular"><a href="">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="header__regis">
-        <button class="login-btn">Login</button>
-        <button class="signup-btn">Sign up</button>
-      </div>
-    </div>
-    <div class="slider">
-      <div class="slider__text">
-        <div class="slider__heading">
-          <p>Lessons and insights from 8 years</p>
+    <div class="container">
+      <div class="header flex-between">
+        <div class="header__logo">
+          <img src="./assets/full-logo.svg" alt="logo" />
         </div>
-        <div class="slider__sub-heading">
-          <p>
-            Where to grow your business as a photographer: site or social media?
-          </p>
+        <div class="header__nav">
+          <ul>
+            <li class="header__nav-item body2--medium"><a href="">Home</a></li>
+            <li class="header__nav-item body2--medium">
+              <a href="">Service</a>
+            </li>
+            <li class="header__nav-item body2--medium">
+              <a href="">Feature</a>
+            </li>
+            <li class="header__nav-item body2--medium">
+              <a href="">Product</a>
+            </li>
+            <li class="header__nav-item body2--medium">
+              <a href="">Testimonial</a>
+            </li>
+            <li class="header__nav-item body2--medium"><a href="">FAQ</a></li>
+          </ul>
         </div>
-        <div class="register-btn">Register</div>
+        <div class="header__regis">
+          <button class="btn btn__tertiary btn__tertiary--default">
+            Login
+          </button>
+          <button class="signup-btn btn btn__primary btn__primary--default">
+            Sign up
+          </button>
+        </div>
       </div>
-      <div class="slider__img"></div>
+      <div class="slider flex-center">
+        <div class="slider__text">
+          <div class="slider__heading headline1">
+            <p>
+              Lessons and insights <br />
+              <span>from 8 years</span>
+            </p>
+          </div>
+          <div class="slider__sub-heading body2--regular">
+            <p>
+              Where to grow your business as a photographer: site or social
+              media?
+            </p>
+          </div>
+          <div class="register-btn btn__primary--default body2--medium">
+            Register
+          </div>
+        </div>
+        <div class="slider__img">
+          <img src="./assets/slider-img.svg" alt="" />
+        </div>
+      </div>
     </div>
   </body>
 </html>

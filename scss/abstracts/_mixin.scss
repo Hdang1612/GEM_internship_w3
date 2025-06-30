@@ -18,20 +18,22 @@
 //   line-height: $lineheight;
 // }
 
-@mixin text-style($color, $fsize, $fstyle, $fstyle, $lheight) {
+@mixin text-style($color, $fsize, $fstyle, $fweight, $lheight) {
   color: $color;
   font-size: $fsize;
   font-style: $fstyle;
-  font-weight: $fstyle;
+  font-weight: $fweight;
   line-height: $lheight;
 }
 
 @mixin button-style($bg-color, $text-color) {
+  cursor: pointer;
   display: inline-flex;
   padding: 1.6rem 3.2rem;
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
+  border: 0;
   border-radius: 0.4rem;
   background: $bg-color;
   color: $text-color;
