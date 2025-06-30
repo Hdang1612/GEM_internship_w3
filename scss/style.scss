@@ -14,17 +14,19 @@ html {
   font-size: 10px;
   font-family: $font-family-base;
   background-color: $neutral-silver;
+  background-color: $neutral-white;
 }
 
-.container {
-  max-width: 144rem;
-  margin: auto;
-}
+// .container {
+//   max-width: 144rem;
+//   margin: auto;
+// }
 
 .header {
   // @include flex-between;
   width: 100%;
   padding: 3rem 10.5rem;
+  background-color: $neutral-silver;
   &__nav {
     ul {
       list-style: none;
@@ -43,6 +45,7 @@ html {
 .slider {
   gap: 10.4rem;
   padding: 9.6rem 14.4rem;
+  background-color: $neutral-silver;
   &__heading {
     span {
       color: $primary-color;
@@ -54,7 +57,7 @@ html {
 }
 
 .content {
-  padding: 0 14.4rem;
+  // padding: 0 14.4rem;
   .clients-logo {
     height: 9.8rem;
   }
@@ -106,6 +109,8 @@ html {
     }
 
     .achievements {
+      background-color: $neutral-silver;
+      padding: 6.4rem 14.4rem;
       &__text {
         display: flex;
         width: 54rem;
@@ -136,6 +141,8 @@ html {
     .customers {
       display: flex;
       gap: 7.8rem;
+      padding: 3.2rem 14.4rem;
+      background-color: $neutral-silver;
       &__img {
         img {
           width: 32.6rem;
@@ -232,6 +239,7 @@ html {
     flex-direction: column;
     align-items: center;
     gap: 3.2rem;
+    background-color: $neutral-silver;
     p {
       width: 88.7rem;
       text-align: center;

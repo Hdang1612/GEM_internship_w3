@@ -17,6 +17,7 @@ a {
 
 .section {
   margin-top: 4rem;
+  padding: 0 14.4rem;
 }
 .section__header {
   display: flex;
@@ -253,16 +254,13 @@ html {
   font-size: 10px;
   font-family: "Inter", sans-serif;
   background-color: #f5f7fa;
-}
-
-.container {
-  max-width: 144rem;
-  margin: auto;
+  background-color: #fff;
 }
 
 .header {
   width: 100%;
   padding: 3rem 10.5rem;
+  background-color: #f5f7fa;
 }
 .header__nav ul {
   list-style: none;
@@ -277,6 +275,7 @@ html {
 .slider {
   gap: 10.4rem;
   padding: 9.6rem 14.4rem;
+  background-color: #f5f7fa;
 }
 .slider__heading span {
   color: #4caf4f;
@@ -285,9 +284,6 @@ html {
   margin: 1.6rem 0 3.6rem 0;
 }
 
-.content {
-  padding: 0 14.4rem;
-}
 .content .clients-logo {
   height: 9.8rem;
 }
@@ -333,6 +329,10 @@ html {
 .content__body .calenders__sub-heading {
   margin-bottom: 3.2rem;
 }
+.content__body .achievements {
+  background-color: #f5f7fa;
+  padding: 6.4rem 14.4rem;
+}
 .content__body .achievements__text {
   display: flex;
   width: 54rem;
@@ -361,6 +361,8 @@ html {
 .content__body .customers {
   display: flex;
   gap: 7.8rem;
+  padding: 3.2rem 14.4rem;
+  background-color: #f5f7fa;
 }
 .content__body .customers__img img {
   width: 32.6rem;
@@ -453,6 +455,7 @@ html {
   flex-direction: column;
   align-items: center;
   gap: 3.2rem;
+  background-color: #f5f7fa;
 }
 .footer__top p {
   width: 88.7rem;
