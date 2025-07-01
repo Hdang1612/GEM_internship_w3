@@ -7,6 +7,11 @@ a {
   margin-top: 4rem;
   padding: 0 14.4rem;
 }
+@media (max-width: 1200px) {
+  .section {
+    padding: 0 9rem;
+  }
+}
 .section__header {
   display: flex;
   flex-direction: column;
@@ -170,6 +175,11 @@ a {
   background: #4caf4f;
   color: neutral-white;
 }
+@media (max-width: 1200px) {
+  .btn__primary:hover {
+    padding: 0.8rem 1.6rem;
+  }
+}
 .btn__primary--focus {
   cursor: pointer;
   display: inline-flex;
@@ -231,6 +241,11 @@ a {
   background: #fff;
   color: #4caf4f;
 }
+@media (max-width: 1200px) {
+  .btn__tertiary:hover {
+    padding: 0.8rem 1.6rem;
+  }
+}
 
 * {
   padding: 0;
@@ -255,6 +270,11 @@ html {
   padding: 3rem 10.5rem;
   background-color: #f5f7fa;
 }
+@media (max-width: 1200px) {
+  .header {
+    padding: 3rem 6rem;
+  }
+}
 .header__nav ul {
   list-style: none;
   display: flex;
@@ -263,12 +283,29 @@ html {
   justify-content: flex-start;
   gap: 5rem;
 }
+@media (max-width: 1200px) {
+  .header__nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+}
 .header__regis {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 1.4rem;
+}
+.header__regis button {
+  height: 4rem;
+}
+@media (max-width: 1200px) {
+  .header__regis button {
+    padding: 0.8rem 1.6rem;
+  }
 }
 
 .slider-container {
@@ -291,6 +328,11 @@ html {
   padding: 9.6rem 14.4rem;
   width: 100%;
   margin: auto;
+}
+@media (max-width: 1200px) {
+  .slider__item {
+    padding: 6rem 9rem;
+  }
 }
 .slider__heading span {
   color: #4caf4f;
@@ -383,6 +425,16 @@ html {
   background-color: #f5f7fa;
   padding: 6.4rem 14.4rem;
 }
+@media (max-width: 1200px) {
+  .content__body .achievements {
+    padding: 4 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
 .content__body .achievements__text {
   display: flex;
   flex-direction: column;
@@ -391,6 +443,11 @@ html {
   gap: 0.8rem;
   width: 54rem;
   flex-shrink: 0;
+}
+@media (max-width: 1200px) {
+  .content__body .achievements__text {
+    width: 40rem;
+  }
 }
 .content__body .achievements__heading {
   width: 40rem;
@@ -420,6 +477,16 @@ html {
   padding: 3.2rem 14.4rem;
   background-color: #f5f7fa;
 }
+@media (max-width: 1200px) {
+  .content__body .customers {
+    padding: 4 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
 .content__body .customers__img img {
   width: 32.6rem;
   height: 32.6rem;
@@ -428,6 +495,12 @@ html {
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
+}
+@media (max-width: 1200px) {
+  .content__body .customers__img img {
+    width: 20rem;
+    height: 20rem;
+  }
 }
 .content__body .customers__text {
   display: flex;
@@ -472,6 +545,12 @@ html {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1200px) {
+  .content__body .community-updates__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 12rem 3rem;
+  }
 }
 .content__body .community-updates__card {
   display: flex;
@@ -540,6 +619,12 @@ html {
   background: #263238;
   padding: 6.4rem 16.5rem;
 }
+@media (max-width: 1200px) {
+  .footer__content {
+    padding: 4rem 9rem;
+    gap: 1rem;
+  }
+}
 .footer__content-left {
   display: flex;
   flex-direction: column;
@@ -558,6 +643,11 @@ html {
 .footer__content-left .footer__copyright-info p {
   width: 35rem;
 }
+@media (max-width: 1200px) {
+  .footer__content-left .footer__copyright-info p {
+    width: 24rem;
+  }
+}
 .footer__content-left .footer__social-icon {
   display: flex;
   flex-direction: row;
@@ -572,6 +662,11 @@ html {
   justify-content: flex-start;
   gap: 3rem;
   color: #fff;
+}
+@media (max-width: 1200px) {
+  .footer__content-right {
+    gap: 1.6rem;
+  }
 }
 .footer__content-right .footer__sm-col {
   display: flex;

@@ -8,6 +8,9 @@
     }
     &:hover {
       @include button-style($primary-color, neutral-white);
+      @include xl {
+        padding: 0.8rem 1.6rem;
+      }
     }
     &--focus {
       @include button-style($primary-color, neutral-white);
@@ -26,6 +29,9 @@
     }
     &:hover {
       @include button-style($neutral-white, $primary-color);
+      @include xl {
+        padding: 0.8rem 1.6rem;
+      }
     }
   }
 }

@@ -8,6 +8,9 @@ a {
 .section {
   margin-top: 4rem;
   padding: 0 14.4rem;
+  @include xl {
+    padding: 0 9rem;
+  }
   &__header {
     display: flex;
     flex-direction: column;
