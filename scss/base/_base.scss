@@ -11,6 +11,9 @@ a {
   @include xl {
     padding: 0 9rem;
   }
+  @include lg {
+    padding: 0 6rem;
+  }
   &__header {
     display: flex;
     flex-direction: column;

@@ -25,6 +25,9 @@ html {
   @include xl {
     padding: 3rem 6rem;
   }
+  @include lg {
+    @include flexbox($justify: center);
+  }
   &__nav {
     ul {
       list-style: none;
@@ -43,6 +46,60 @@ html {
       }
     }
   }
+  &__nav,
+  &__regis {
+    @include lg {
+      display: none;
+    }
+  }
+  &__menu-icon {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    cursor: pointer;
+    display: none;
+    @include lg {
+      display: block;
+    }
+  }
+  &__menu-hidden {
+    background-color: $primary-color;
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -20%;
+    z-index: 99999;
+    padding: 5rem 4rem;
+    transition: all 0.3s ease-in-out;
+    display: none;
+    @include lg {
+      left: -30%;
+      display: block;
+    }
+    @include md {
+      width: 60%;
+      left: -60%;
+    }
+    @include sm {
+      width: 100%;
+      left: -100%;
+    }
+    &--active {
+      left: 0;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__menu-list {
+    @include flexbox($direction: column, $gap: 2rem, $align: flex-start);
+  }
+  &__close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+  }
 }
 
 .slider-container {
@@ -60,6 +117,9 @@ html {
     @include xl {
       padding: 6rem 9rem;
     }
+    @include lg {
+      padding: 2rem 4rem;
+    }
     width: 100%;
     margin: auto;
   }
@@ -70,6 +130,12 @@ html {
   }
   &__sub-heading {
     margin: 1.6rem 0 3.6rem 0;
+  }
+  &__img img {
+    @include lg {
+      width: 30rem;
+      height: 31rem;
+    }
   }
   &__dot-container {
     @include flexbox($gap: 0.8rem);
@@ -103,6 +169,10 @@ html {
       text-align: center;
       flex-shrink: 0;
       @include shadow(2px, 4px, rgba(171, 190, 209, 0.2));
+      @include lg {
+        padding: 1.2rem 1.6rem;
+        width: 20rem;
+      }
     }
     &__card-img {
       margin-bottom: 1.6rem;
@@ -138,13 +208,20 @@ html {
         padding: 4 9rem;
         @include flexbox($justify: center, $gap: 4rem);
       }
+      @include lg {
+        padding: 4rem 6rem;
+        @include flexbox($justify: center, $direction: column, $gap: 4rem);
+      }
+
       &__text {
         @include flexbox(flex-start, flex-start, column, 0.8rem);
         width: 54rem;
         @include xl {
           width: 40rem;
         }
-        flex-shrink: 0;
+        @include lg {
+          width: 100%;
+        }
       }
       &__heading {
         width: 40rem;
@@ -152,11 +229,22 @@ html {
           color: $primary-color;
         }
       }
+      &__heading,
+      &__sub-heading {
+        @include lg {
+          width: 100%;
+          text-align: center;
+        }
+      }
       &__counts {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 4rem 3rem;
         width: 54rem;
+        @include lg {
+          width: 100%;
+          place-items: center;
+        }
       }
       &__item {
         @include flexbox($gap: 1.6rem);
@@ -168,21 +256,27 @@ html {
       padding: 3.2rem 14.4rem;
       background-color: $neutral-silver;
       @include xl {
-        padding: 4 9rem;
+        padding: 4rem 9rem;
         @include flexbox($justify: center, $align: flex-start, $gap: 4rem);
+      }
+      @include lg {
+        padding: 4rem 6rem;
       }
       &__img {
         img {
           width: 32.6rem;
           height: 32.6rem;
-          @include xl {
-            width: 20rem;
-            height: 20rem;
-          }
           flex-shrink: 0;
           border-radius: 0.8rem;
           object-fit: cover;
           @include shadow(8px, 16px, rgba(171, 190, 209, 0.4));
+          @include xl {
+            width: 20rem;
+            height: 20rem;
+          }
+          @include xl {
+            display: none;
+          }
         }
       }
 
@@ -228,6 +322,10 @@ html {
           height: 28.6rem;
           object-fit: cover;
           border-radius: 0.8rem;
+          @include lg {
+            width: 30rem;
+            height: 20rem;
+          }
         }
       }
       &__card-info {
@@ -241,6 +339,10 @@ html {
         p {
           width: 27rem;
           text-align: center;
+          @include lg {
+            width: 18rem;
+            font-size: 1.2rem;
+          }
         }
         button {
           @include flexbox($align: center, $justify: center, $gap: 0.8rem);
@@ -274,6 +376,9 @@ html {
       padding: 4rem 9rem;
       gap: 1rem;
     }
+    @include lg {
+      padding: 4rem 6rem;
+    }
   }
   &__content-left {
     @include flexbox($align: flex-start, $direction: column, $gap: 4rem);
@@ -297,6 +402,12 @@ html {
     @include xl {
       gap: 1.6rem;
     }
+
+    @include lg {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
     .footer__sm-col {
       @include flexbox($align: flex-start, $direction: column, $gap: 2.4rem);
       width: 16rem;

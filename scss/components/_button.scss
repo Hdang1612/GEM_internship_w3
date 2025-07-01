@@ -5,6 +5,9 @@
   &__primary {
     &--default {
       @include button-style($primary-color, $neutral-white);
+      @include xl {
+        padding: 0.8rem 1.6rem;
+      }
     }
     &:hover {
       @include button-style($primary-color, neutral-white);
@@ -14,18 +17,30 @@
     }
     &--focus {
       @include button-style($primary-color, neutral-white);
+      @include xl {
+        padding: 0.8rem 1.6rem;
+      }
       border: 2px solid $neutral-d-grey;
     }
     &--click {
       @include button-style($shade-2, neutral-white);
+      @include xl {
+        padding: 0.8rem 1.6rem;
+      }
     }
     &--disable {
       @include button-style($neutral-silver, $neutral-grey-blue);
+      @include xl {
+        padding: 0.8rem 1.6rem;
+      }
     }
   }
   &__tertiary {
     &--default {
       @include button-style($neutral-silver, $primary-color);
+      @include xl {
+        padding: 0.8rem 1.6rem;
+      }
     }
     &:hover {
       @include button-style($neutral-white, $primary-color);
