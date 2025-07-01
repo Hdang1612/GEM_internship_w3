@@ -1,22 +1,10 @@
-@mixin flex-center {
+@mixin flexbox($align: center, $justify: flex-start, $direction: row, $gap: 0) {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
 }
-
-@mixin flex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-// @mixin headline($fsize, $fweight, $lineheight) {
-//   color: $neutral-black;
-//   font-size: $fsize;
-//   font-style: normal;
-//   font-weight: $fweight;
-//   line-height: $lineheight;
-// }
 
 @mixin text-style($color, $fsize, $fstyle, $fweight, $lheight) {
   color: $color;

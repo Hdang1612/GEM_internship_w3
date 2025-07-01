@@ -17,33 +17,24 @@ html {
   background-color: $neutral-white;
 }
 
-// .container {
-//   max-width: 144rem;
-//   margin: auto;
-// }
-
 .header {
-  // @include flex-between;
+  @include flexbox($justify: space-between);
   width: 100%;
   padding: 3rem 10.5rem;
   background-color: $neutral-silver;
   &__nav {
     ul {
       list-style: none;
-      display: flex;
-      gap: 5rem;
+      @include flexbox($gap: 5rem);
     }
   }
-  &__nav-item {
-  }
   &__regis {
-    display: flex;
-    gap: 1.4rem;
+    @include flexbox($gap: 1.4rem);
   }
 }
 
 .slider {
-  gap: 10.4rem;
+  @include flexbox($justify: center, $align: center, $gap: 10.4rem);
   padding: 9.6rem 14.4rem;
   background-color: $neutral-silver;
   &__heading {
@@ -57,30 +48,22 @@ html {
 }
 
 .content {
-  // padding: 0 14.4rem;
   .clients-logo {
+    @include flexbox($justify: space-between);
     height: 9.8rem;
   }
 
   .community {
     &__card-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flexbox($justify: space-between);
     }
     &__card {
-      display: flex;
+      @include flexbox(center, flex-start, column, 0.8rem);
       width: 29.9rem;
       padding: 2.4rem 3.2rem;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
-      gap: 0.8rem;
       flex-shrink: 0;
       @include shadow(2px, 4px, rgba(171, 190, 209, 0.2));
-    }
-    &__card-img {
-      margin-bottom: 1.6rem;
     }
     &__card-img {
       margin-bottom: 1.6rem;
@@ -91,9 +74,9 @@ html {
     .section {
       margin-top: 4.8rem;
     }
-
     .unlock,
     .calenders {
+      @include flexbox($justify: space-between);
       &__img {
         padding: 5.2rem 0;
       }
@@ -109,14 +92,12 @@ html {
     }
 
     .achievements {
+      @include flexbox($justify: space-between);
       background-color: $neutral-silver;
       padding: 6.4rem 14.4rem;
       &__text {
-        display: flex;
+        @include flexbox(flex-start, flex-start, column, 0.8rem);
         width: 54rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.8rem;
         flex-shrink: 0;
       }
       &__heading {
@@ -132,15 +113,12 @@ html {
         width: 54rem;
       }
       &__item {
-        display: flex;
-        align-items: center;
-        gap: 1.6rem;
+        @include flexbox($gap: 1.6rem);
       }
     }
 
     .customers {
-      display: flex;
-      gap: 7.8rem;
+      @include flexbox($gap: 7.8rem);
       padding: 3.2rem 14.4rem;
       background-color: $neutral-silver;
       &__img {
@@ -155,11 +133,7 @@ html {
       }
 
       &__text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 3.2rem;
-        flex: 1 0 0;
+        @include flexbox($align: flex-start, $direction: column, $gap: 3.2rem);
       }
 
       &__comment {
@@ -173,30 +147,24 @@ html {
         color: $neutral-l-grey;
       }
       &__text-footer {
+        @include flexbox($justify: space-between, $gap: 3.2rem);
         width: 100%;
-        gap: 3.2rem;
       }
       &__icon {
-        gap: 4.1rem;
+        @include flexbox($justify: space-between, $gap: 4.1rem);
       }
     }
 
     .community-updates {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.6rem;
+      @include flexbox($align: center, $direction: column, $gap: 1.6rem);
       &__content {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
       }
       &__card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexbox($align: center, $direction: column, $gap: 1.6rem);
         position: relative;
-        // gap: -9.6rem;
         .community-updates__img img {
           width: 36.8rem;
           height: 28.6rem;
@@ -205,13 +173,10 @@ html {
         }
       }
       &__card-info {
+        @include flexbox($align: center, $direction: column, $gap: 1.6rem);
         position: absolute;
         bottom: -9.6rem;
-        display: flex;
         padding: 1.6rem;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.6rem;
         border-radius: 0.8rem;
         background: $neutral-silver;
         @include shadow(8px, 16px, rgba(171, 190, 209, 0.4));
@@ -220,11 +185,8 @@ html {
           text-align: center;
         }
         button {
-          display: flex;
+          @include flexbox($align: center, $justify: center, $gap: 0.8rem);
           padding: 0.8rem;
-          justify-content: center;
-          align-items: center;
-          gap: 0.8rem;
           align-self: stretch;
         }
       }
@@ -234,11 +196,8 @@ html {
 .footer {
   margin-top: 16rem;
   &__top {
-    display: flex;
+    @include flexbox($align: center, $direction: column, $gap: 3.2rem);
     padding: 3.2rem 0rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 3.2rem;
     background-color: $neutral-silver;
     p {
       width: 88.7rem;
@@ -246,70 +205,53 @@ html {
     }
   }
   &__content {
+    @include flexbox(
+      $align: flex-start,
+      $justify: space-between,
+      $gap: 12.5rem
+    );
     background: $neutral-black;
-    display: flex;
     padding: 6.4rem 16.5rem;
-    align-items: flex-start;
-    gap: 12.5rem;
   }
   &__content-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4rem;
+    @include flexbox($align: flex-start, $direction: column, $gap: 4rem);
     .footer__copyright-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.8rem;
+      @include flexbox($align: center, $direction: column, $gap: 0.8rem);
       color: $neutral-grey;
       p {
         width: 35rem;
       }
     }
     .footer__social-icon {
-      display: flex;
-      align-items: flex-start;
-      gap: 1.6rem;
+      @include flexbox($align: flex-start, $gap: 1.6rem);
     }
   }
   &__content-right {
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem;
+    @include flexbox($align: flex-start, $gap: 3rem);
     color: $neutral-white;
     .footer__sm-col {
+      @include flexbox($align: flex-start, $direction: column, $gap: 2.4rem);
       width: 16rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 2.4rem;
     }
     .footer__lg-col {
+      @include flexbox($align: flex-start, $direction: column, $gap: 2.4rem);
       width: 25.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 2.4rem;
     }
   }
   &__heading {
     color: $neutral-white;
   }
   &__nav-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.2rem;
+    @include flexbox($align: flex-start, $direction: column, $gap: 1.2rem);
   }
   &__input {
+    @include flexbox($justify: space-between);
     padding: 0 1.2rem;
     width: 25.5rem;
     height: 4rem;
     flex-shrink: 0;
     border-radius: 0.8rem;
     opacity: 0.4;
-
     background: $neutral-white;
     input {
       outline: none;
