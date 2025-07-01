@@ -33,10 +33,21 @@ html {
   }
 }
 
-.slider {
-  @include flexbox($justify: center, $align: center, $gap: 10.4rem);
-  padding: 9.6rem 14.4rem;
+.slider-container {
+  position: relative;
+  overflow: hidden;
   background-color: $neutral-silver;
+}
+.slider {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: 300%;
+  &__item {
+    @include flexbox($justify: center, $align: center, $gap: 10.4rem);
+    padding: 9.6rem 14.4rem;
+    width: 100%;
+    margin: auto;
+  }
   &__heading {
     span {
       color: $primary-color;
@@ -44,6 +55,19 @@ html {
   }
   &__sub-heading {
     margin: 1.6rem 0 3.6rem 0;
+  }
+  &__dot-container {
+    @include flexbox($gap: 0.8rem);
+    position: absolute;
+    bottom: 1.6rem;
+    left: 50%;
+    .dot {
+      opacity: 0.3;
+      cursor: pointer;
+    }
+    .slider__dot--active {
+      opacity: 1;
+    }
   }
 }
 
