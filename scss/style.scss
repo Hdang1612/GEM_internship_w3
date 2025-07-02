@@ -28,6 +28,9 @@ html {
   @include lg {
     @include flexbox($justify: center);
   }
+  @include md {
+    padding: 2rem 2rem;
+  }
   &__nav {
     ul {
       list-style: none;
@@ -60,6 +63,9 @@ html {
     display: none;
     @include lg {
       display: block;
+    }
+    @include md {
+      top: 2rem;
     }
   }
   &__menu-hidden {
@@ -136,6 +142,9 @@ html {
       width: 30rem;
       height: 31rem;
     }
+    @include md {
+      display: none;
+    }
   }
   &__dot-container {
     @include flexbox($gap: 0.8rem);
@@ -156,6 +165,15 @@ html {
   .clients-logo {
     @include flexbox($justify: space-between);
     height: 9.8rem;
+    @include md {
+      height: 6rem;
+    }
+    img {
+      @include md {
+        width: 3.6rem;
+        height: 3.6rem;
+      }
+    }
   }
 
   .community {
@@ -173,6 +191,20 @@ html {
         padding: 1.2rem 1.6rem;
         width: 20rem;
       }
+      @include md {
+        // padding: 1.2rem 1.6rem;
+        width: 16rem;
+      }
+    }
+    &__heading {
+      @include md {
+        font-size: 1.8rem;
+      }
+    }
+    &__sub-heading {
+      @include md {
+        display: none;
+      }
     }
     &__card-img {
       margin-bottom: 1.6rem;
@@ -182,21 +214,39 @@ html {
   &__body {
     .section {
       margin-top: 4.8rem;
+      @include md {
+        margin-top: 3.6rem;
+      }
     }
     .unlock,
     .calenders {
       @include flexbox($justify: space-between);
+      @include md {
+        @include flexbox($direction: column);
+      }
       &__img {
         padding: 5.2rem 0;
+        @include md {
+          padding: 3rem 0;
+        }
       }
       &__text {
         width: 66rem;
+        @include md {
+          width: 100%;
+        }
       }
       &__heading {
         margin-bottom: 1.6rem;
+        @include md {
+          @include text-style($neutral-black, 2.4rem, normal, 600, 3.2rem);
+        }
       }
       &__sub-heading {
         margin-bottom: 3.2rem;
+        @include md {
+          @include text-style($neutral-black, 1.2rem, normal, 500, 1.6rem);
+        }
       }
     }
 
@@ -262,6 +312,10 @@ html {
       @include lg {
         padding: 4rem 6rem;
       }
+      @include lg {
+        padding: 3rem 4rem;
+        display: block;
+      }
       &__img {
         img {
           width: 32.6rem;
@@ -274,7 +328,7 @@ html {
             width: 20rem;
             height: 20rem;
           }
-          @include xl {
+          @include lg {
             display: none;
           }
         }
@@ -300,6 +354,12 @@ html {
       }
       &__icon {
         @include flexbox($justify: space-between, $gap: 4.1rem);
+        img {
+          @include md {
+            width: 3.6rem;
+            height: 3.6rem;
+          }
+        }
       }
     }
 
@@ -313,10 +373,17 @@ html {
           grid-template-columns: 1fr 1fr;
           gap: 12rem 3rem;
         }
+        @include md {
+          display: flex;
+          overflow-x: auto;
+          overflow-y: visible;
+          height: 34rem;
+        }
       }
       &__card {
         @include flexbox($align: center, $direction: column, $gap: 1.6rem);
         position: relative;
+        height: fit-content;
         .community-updates__img img {
           width: 36.8rem;
           height: 28.6rem;
@@ -349,19 +416,37 @@ html {
           padding: 0.8rem;
           align-self: stretch;
         }
+        @include md {
+          height: 14rem;
+          @include flexbox(
+            $align: center,
+            $justify: space-between,
+            $direction: column,
+            $gap: 1.6rem
+          );
+        }
       }
     }
   }
 }
 .footer {
   margin-top: 16rem;
+  @include lg {
+    margin-top: 12rem;
+  }
+  @include md {
+    margin-top: 6rem;
+  }
   &__top {
     @include flexbox($align: center, $direction: column, $gap: 3.2rem);
-    padding: 3.2rem 0rem;
+    padding: 3.2rem 4rem;
     background-color: $neutral-silver;
     p {
       width: 88.7rem;
       text-align: center;
+      @include md {
+        width: 100%;
+      }
     }
   }
   &__content {
@@ -379,9 +464,21 @@ html {
     @include lg {
       padding: 4rem 6rem;
     }
+    @include md {
+      @include flexbox($align: flex-start, $justify: flex-start, $gap: 5rem);
+      flex-wrap: wrap;
+    }
   }
   &__content-left {
     @include flexbox($align: flex-start, $direction: column, $gap: 4rem);
+    .footer__logo {
+      img {
+        @include md {
+          width: 16rem;
+          height: auto;
+        }
+      }
+    }
     .footer__copyright-info {
       @include flexbox($align: center, $direction: column, $gap: 0.8rem);
       color: $neutral-grey;
@@ -390,10 +487,22 @@ html {
         @include xl {
           width: 24rem;
         }
+        @include md {
+          width: 100%;
+        }
+      }
+      @include md {
+        @include flexbox($align: flex-start, $direction: column, $gap: 0.8rem);
       }
     }
     .footer__social-icon {
       @include flexbox($align: flex-start, $gap: 1.6rem);
+    }
+    @include md {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
   }
   &__content-right {
@@ -406,6 +515,12 @@ html {
     @include lg {
       display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+    @include md {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
 
     .footer__sm-col {

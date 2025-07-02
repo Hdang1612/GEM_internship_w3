@@ -33,6 +33,7 @@ function resetInterval() {
 }
 updateSlider();
 
+//menu
 menuIconBtn.addEventListener("click", () => {
   if (menuContent.classList.contains("header__menu-hidden--active")) {
     menuContent.classList.remove("header__menu-hidden--active");
