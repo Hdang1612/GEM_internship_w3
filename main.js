@@ -27,7 +27,10 @@ function nextSlide() {
   resetInterval();
 }
 function prevSlide() {
-  currentSlide = (currentSlide - 1) % totalSlides;
+  if (currentSlide === 0) currentSlide = 2;
+  else {
+    currentSlide = (currentSlide - 1) % totalSlides;
+  }
   updateSlider();
   resetInterval();
 }
@@ -38,6 +41,34 @@ function resetInterval() {
   slideInterval = setInterval(nextSlide, 5000);
 }
 updateSlider();
+
+//mobile slider behavior
+let startX = 0;
+let currentX = 0;
+let isDragging = false;
+slider.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+  isDragging = true;
+});
+
+slider.addEventListener("touchmove", (e) => {
+  if (!isDragging) return;
+  currentX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", () => {
+  if (!isDragging) return;
+  const diff = startX - currentX;
+  if (diff > 50) {
+    currentSlide = (currentSlide + 1) % totalSlides;
+  } else if (diff < -50) {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  }
+
+  updateSlider();
+  resetInterval();
+  isDragging = false;
+});
 
 //menu
 menuIconBtn.addEventListener("click", () => {

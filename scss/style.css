@@ -1,3 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -47,7 +59,7 @@ li {
   }
 }
 .section__heading {
-  color: #263238;
+  color: #4d4d4d;
   font-size: 3.6rem;
   font-style: normal;
   font-weight: 600;
@@ -57,7 +69,7 @@ li {
 }
 @media (max-width: 992px) {
   .section__heading {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 3.2rem;
     font-style: normal;
     font-weight: 600;
@@ -66,7 +78,7 @@ li {
 }
 @media (max-width: 768px) {
   .section__heading {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 500;
@@ -75,7 +87,7 @@ li {
 }
 @media (max-width: 576px) {
   .section__heading {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 500;
@@ -83,7 +95,7 @@ li {
   }
 }
 .section__sub-heading {
-  color: #263238;
+  color: #717171;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -93,7 +105,7 @@ li {
 }
 @media (max-width: 992px) {
   .section__sub-heading {
-    color: #263238;
+    color: #717171;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 600;
@@ -103,7 +115,7 @@ li {
 }
 @media (max-width: 768px) {
   .section__sub-heading {
-    color: #263238;
+    color: #717171;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 500;
@@ -113,7 +125,7 @@ li {
 }
 @media (max-width: 576px) {
   .section__sub-heading {
-    color: #263238;
+    color: #717171;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -141,7 +153,7 @@ li {
 }
 
 .headline1 {
-  color: #263238;
+  color: #4d4d4d;
   font-size: 6.4rem;
   font-style: normal;
   font-weight: 600;
@@ -149,7 +161,7 @@ li {
 }
 @media (max-width: 1200px) {
   .headline1 {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 4.8rem;
     font-style: normal;
     font-weight: 600;
@@ -158,7 +170,7 @@ li {
 }
 @media (max-width: 992px) {
   .headline1 {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 3.6rem;
     font-style: normal;
     font-weight: 600;
@@ -167,7 +179,7 @@ li {
 }
 @media (max-width: 576px) {
   .headline1 {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 2.8rem;
     font-style: normal;
     font-weight: 600;
@@ -176,7 +188,7 @@ li {
 }
 
 .headline2 {
-  color: #263238;
+  color: #4d4d4d;
   font-size: 3.6rem;
   font-style: normal;
   font-weight: 600;
@@ -184,7 +196,7 @@ li {
 }
 @media (max-width: 1200px) {
   .headline2 {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 3.2rem;
     font-style: normal;
     font-weight: 600;
@@ -193,7 +205,7 @@ li {
 }
 @media (max-width: 992px) {
   .headline2 {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 2.8rem;
     font-style: normal;
     font-weight: 700;
@@ -202,7 +214,7 @@ li {
 }
 @media (max-width: 576px) {
   .headline2 {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 600;
@@ -211,7 +223,7 @@ li {
 }
 
 .headline3 {
-  color: #263238;
+  color: #4d4d4d;
   font-size: 2.8rem;
   font-style: normal;
   font-weight: 700;
@@ -219,7 +231,7 @@ li {
 }
 @media (max-width: 1200px) {
   .headline3 {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 600;
@@ -228,7 +240,7 @@ li {
 }
 @media (max-width: 992px) {
   .headline3 {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 2rem;
     font-style: normal;
     font-weight: 600;
@@ -237,7 +249,7 @@ li {
 }
 @media (max-width: 576px) {
   .headline3 {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 600;
@@ -246,7 +258,7 @@ li {
 }
 
 .headline4 {
-  color: #263238;
+  color: #4d4d4d;
   font-size: 2rem;
   font-style: normal;
   font-weight: 600;
@@ -254,7 +266,7 @@ li {
 }
 @media (max-width: 1200px) {
   .headline4 {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;
@@ -263,7 +275,7 @@ li {
 }
 @media (max-width: 992px) {
   .headline4 {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 600;
@@ -272,7 +284,7 @@ li {
 }
 @media (max-width: 576px) {
   .headline4 {
-    color: #263238;
+    color: #4d4d4d;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 600;
@@ -636,19 +648,6 @@ li {
   }
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-  font-family: "Inter", sans-serif;
-  background-color: #f5f7fa;
-  background-color: #fff;
-}
-
 .header {
   display: flex;
   flex-direction: row;
@@ -688,7 +687,6 @@ html {
   }
 }
 .header__nav ul {
-  list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -697,10 +695,6 @@ html {
 }
 @media (max-width: 1200px) {
   .header__nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
     gap: 3rem;
   }
 }
@@ -713,11 +707,6 @@ html {
 }
 .header__regis button {
   height: 4rem;
-}
-@media (max-width: 1200px) {
-  .header__regis button {
-    padding: 0.8rem 1.6rem;
-  }
 }
 @media (max-width: 992px) {
   .header__nav, .header__regis {
@@ -1001,6 +990,9 @@ html {
     font-size: 1.8rem;
   }
 }
+.content .community__sub-heading {
+  color: #717171;
+}
 @media (max-width: 768px) {
   .content .community__sub-heading {
     display: none;
@@ -1099,12 +1091,13 @@ html {
 }
 .content__body .unlock__sub-heading,
 .content__body .calenders__sub-heading {
+  color: #717171;
   margin-bottom: 3.2rem;
 }
 @media (max-width: 768px) {
   .content__body .unlock__sub-heading,
   .content__body .calenders__sub-heading {
-    color: #263238;
+    color: #717171;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 500;
@@ -1115,7 +1108,7 @@ html {
 @media (max-width: 576px) {
   .content__body .unlock__sub-heading,
   .content__body .calenders__sub-heading {
-    color: #263238;
+    color: #717171;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -1223,6 +1216,9 @@ html {
   .content__body .achievements__item {
     gap: 5rem;
   }
+}
+.content__body .achievements__item .item-subheading {
+  color: #717171;
 }
 .content__body .customers {
   display: flex;
@@ -1365,6 +1361,9 @@ html {
   .content__body .community-updates__content {
     height: 24rem;
   }
+}
+.content__body .community-updates__content::-webkit-scrollbar {
+  display: none;
 }
 .content__body .community-updates__card {
   display: flex;

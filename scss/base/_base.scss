@@ -1,5 +1,16 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixin" as *;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: $font-family-base;
+  background-color: $neutral-white;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -39,33 +50,33 @@ li {
     }
   }
   &__heading {
-    @include text-style($neutral-black, 3.6rem, normal, 600, 4.4rem);
+    @include text-style($neutral-d-grey, 3.6rem, normal, 600, 4.4rem);
     text-align: center;
     max-width: 54.2rem;
     @include lg {
-      @include text-style($neutral-black, 3.2rem, normal, 600, 4rem);
+      @include text-style($neutral-d-grey, 3.2rem, normal, 600, 4rem);
     }
     @include md {
-      @include text-style($neutral-black, 2.4rem, normal, 500, 3.2rem);
+      @include text-style($neutral-d-grey, 2.4rem, normal, 500, 3.2rem);
     }
     @include sm {
-      @include text-style($neutral-black, 1.8rem, normal, 500, 2.4rem);
+      @include text-style($neutral-d-grey, 1.8rem, normal, 500, 2.4rem);
     }
   }
   &__sub-heading {
-    @include text-style($neutral-black, 1.6rem, normal, 400, 2.4rem);
+    @include text-style($neutral-grey, 1.6rem, normal, 400, 2.4rem);
     text-align: center;
     width: 62.8rem;
     @include lg {
-      @include text-style($neutral-black, 1.4rem, normal, 600, 2rem);
+      @include text-style($neutral-grey, 1.4rem, normal, 600, 2rem);
       width: 50rem;
     }
     @include md {
-      @include text-style($neutral-black, 1.2rem, normal, 500, 1.6rem);
+      @include text-style($neutral-grey, 1.2rem, normal, 500, 1.6rem);
       width: 50rem;
     }
     @include sm {
-      @include text-style($neutral-black, 1rem, normal, 500, 1.4rem);
+      @include text-style($neutral-grey, 1rem, normal, 500, 1.4rem);
       width: 50rem;
       width: 24rem;
     }

@@ -4,19 +4,6 @@
 @use "base/typo" as *;
 @use "components/button" as *;
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-  font-family: $font-family-base;
-  background-color: $neutral-silver;
-  background-color: $neutral-white;
-}
-
 .header {
   @include flexbox($justify: space-between);
   width: 100%;
@@ -42,10 +29,9 @@ html {
   }
   &__nav {
     ul {
-      list-style: none;
       @include flexbox($gap: 5rem);
       @include xl {
-        @include flexbox($gap: 3rem);
+        gap: 3rem;
       }
     }
   }
@@ -53,9 +39,6 @@ html {
     @include flexbox($gap: 1.4rem);
     button {
       height: 4rem;
-      @include xl {
-        padding: 0.8rem 1.6rem;
-      }
     }
   }
   &__nav,
@@ -274,6 +257,7 @@ html {
       }
     }
     &__sub-heading {
+      color: $neutral-grey;
       @include md {
         display: none;
       }
@@ -330,13 +314,14 @@ html {
         }
       }
       &__sub-heading {
+        color: $neutral-grey;
         margin-bottom: 3.2rem;
         @include md {
-          @include text-style($neutral-black, 1.2rem, normal, 500, 1.6rem);
+          @include text-style($neutral-grey, 1.2rem, normal, 500, 1.6rem);
           margin-bottom: 2.4rem;
         }
         @include sm {
-          @include text-style($neutral-black, 1rem, normal, 500, 1.4rem);
+          @include text-style($neutral-grey, 1rem, normal, 500, 1.4rem);
           margin-bottom: 1.6rem;
         }
       }
@@ -382,6 +367,7 @@ html {
           text-align: center;
         }
       }
+
       &__counts {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -402,6 +388,9 @@ html {
         @include flexbox($gap: 1.6rem);
         @include sm {
           gap: 5rem;
+        }
+        .item-subheading {
+          color: $neutral-grey;
         }
       }
     }
@@ -499,6 +488,9 @@ html {
         }
         @include sm {
           height: 24rem;
+        }
+        &::-webkit-scrollbar {
+          display: none;
         }
       }
       &__card {
