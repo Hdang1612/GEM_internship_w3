@@ -82,19 +82,3 @@ li {
     }
   }
 }
-
-.shadow {
-  &--sm {
-    @include shadow(2px, 4px, rgba(171, 190, 209, 0.6));
-  }
-  &--md {
-    @include shadow(4px, 8px, rgba(171, 190, 209, 0.4));
-  }
-  &--lg {
-    @include shadow(8px, 16px, rgba(171, 190, 209, 0.4));
-  }
-
-  &--xxl {
-    @include shadow(16px, 32px, rgba(171, 190, 209, 0.3));
-  }
-}

@@ -71,7 +71,7 @@
     @include text-style($neutral-black, 1.4rem, normal, 400, 2rem);
   }
   @include sm {
-    @include text-style($neutral-black, 1rem, normal, 400, 1.6rem);
+    @include text-style($neutral-black, 1.2rem, normal, 400, 1.6rem);
   }
 }
 .body3--regular {
@@ -83,7 +83,7 @@
     @include text-style($neutral-black, 1.2rem, normal, 400, 1.6rem);
   }
   @include sm {
-    @include text-style($neutral-black, 0.8rem, normal, 400, 1.4rem);
+    @include text-style($neutral-black, 1rem, normal, 400, 1.4rem);
   }
 }
 .body4--regular {
