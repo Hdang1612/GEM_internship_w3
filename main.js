@@ -24,6 +24,12 @@ function updateSlider() {
 function nextSlide() {
   currentSlide = (currentSlide + 1) % totalSlides;
   updateSlider();
+  resetInterval();
+}
+function prevSlide() {
+  currentSlide = (currentSlide - 1) % totalSlides;
+  updateSlider();
+  resetInterval();
 }
 let slideInterval = setInterval(nextSlide, 5000);
 

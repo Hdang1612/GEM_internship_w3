@@ -881,6 +881,41 @@ html {
 .slider__dot-container .slider__dot--active {
   opacity: 1;
 }
+.slider__btn-container {
+  width: 100%;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider__btn-container .pre-btn,
+.slider__btn-container .next-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #000;
+  opacity: 0.4;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.slider__btn-container .pre-btn:hover,
+.slider__btn-container .next-btn:hover {
+  opacity: 1;
+}
+@media (max-width: 992px) {
+  .slider__btn-container {
+    display: none;
+  }
+}
 
 .content .clients-logo {
   display: flex;

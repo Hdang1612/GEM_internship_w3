@@ -185,6 +185,30 @@ html {
       opacity: 1;
     }
   }
+  &__btn-container {
+    width: 100%;
+    padding: 0 3rem;
+    @include flexbox($justify: space-between);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    .pre-btn,
+    .next-btn {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background: #000;
+      opacity: 0.4;
+      cursor: pointer;
+      @include flexbox($align: center, $justify: center);
+      &:hover {
+        opacity: 1;
+      }
+    }
+    @include lg {
+      display: none;
+    }
+  }
 }
 
 .content {
