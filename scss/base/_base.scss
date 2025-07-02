@@ -5,6 +5,10 @@ a {
   color: inherit;
 }
 
+li {
+  list-style: none;
+}
+
 .section {
   margin-top: 4rem;
   padding: 0 14.4rem;
@@ -15,8 +19,12 @@ a {
     padding: 0 6rem;
     margin-top: 3rem;
   }
-  @include lg {
+  @include md {
     padding: 0 4rem;
+    margin-top: 2rem;
+  }
+  @include sm {
+    padding: 0 2rem;
     margin-top: 3rem;
   }
 
@@ -26,6 +34,9 @@ a {
     align-items: center;
     gap: 0.8rem;
     margin-bottom: 1.6rem;
+    @include sm {
+      margin-bottom: 1rem;
+    }
   }
   &__heading {
     @include text-style($neutral-black, 3.6rem, normal, 600, 4.4rem);
@@ -36,6 +47,9 @@ a {
     }
     @include md {
       @include text-style($neutral-black, 2.4rem, normal, 500, 3.2rem);
+    }
+    @include sm {
+      @include text-style($neutral-black, 1.8rem, normal, 500, 2.4rem);
     }
   }
   &__sub-heading {
@@ -49,6 +63,11 @@ a {
     @include md {
       @include text-style($neutral-black, 1.2rem, normal, 500, 1.6rem);
       width: 50rem;
+    }
+    @include sm {
+      @include text-style($neutral-black, 1rem, normal, 500, 1.4rem);
+      width: 50rem;
+      width: 24rem;
     }
   }
 }

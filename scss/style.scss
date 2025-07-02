@@ -31,6 +31,15 @@ html {
   @include md {
     padding: 2rem 2rem;
   }
+  @include sm {
+    padding: 2rem 1rem;
+    &__logo {
+      img {
+        width: 12rem;
+        height: auto;
+      }
+    }
+  }
   &__nav {
     ul {
       list-style: none;
@@ -66,6 +75,15 @@ html {
     }
     @include md {
       top: 2rem;
+    }
+    @include sm {
+      top: 2rem;
+      right: 2rem !important;
+      text-align: end;
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
     }
   }
   &__menu-hidden {
@@ -126,6 +144,10 @@ html {
     @include lg {
       padding: 2rem 4rem;
     }
+    @include sm {
+      padding: 1rem 2rem 3rem 2rem;
+      @include flexbox($justify: center, $align: center);
+    }
     width: 100%;
     margin: auto;
   }
@@ -136,6 +158,9 @@ html {
   }
   &__sub-heading {
     margin: 1.6rem 0 3.6rem 0;
+    @include sm {
+      margin: 0.8rem 0 1.8rem 0;
+    }
   }
   &__img img {
     @include lg {
@@ -151,6 +176,7 @@ html {
     position: absolute;
     bottom: 1.6rem;
     left: 50%;
+    transform: translateX(-50%);
     .dot {
       opacity: 0.3;
       cursor: pointer;
@@ -168,10 +194,21 @@ html {
     @include md {
       height: 6rem;
     }
+    @include sm {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1rem;
+      place-items: center;
+    }
     img {
       @include md {
         width: 3.6rem;
         height: 3.6rem;
+      }
+      @include sm {
+        width: 2.8rem;
+        height: 2.8rem;
       }
     }
   }
@@ -179,6 +216,13 @@ html {
   .community {
     &__card-container {
       @include flexbox($justify: space-between);
+      @include sm {
+        @include flexbox(
+          $gap: 2rem,
+          $direction: column,
+          $justify: space-between
+        );
+      }
     }
     &__card {
       @include flexbox(center, flex-start, column, 0.8rem);
@@ -194,6 +238,10 @@ html {
       @include md {
         // padding: 1.2rem 1.6rem;
         width: 16rem;
+      }
+      @include sm {
+        // padding: 1.2rem 1.6rem;
+        width: 100%;
       }
     }
     &__heading {
@@ -217,6 +265,9 @@ html {
       @include md {
         margin-top: 3.6rem;
       }
+      @include sm {
+        margin-top: 2.4rem;
+      }
     }
     .unlock,
     .calenders {
@@ -228,6 +279,14 @@ html {
         padding: 5.2rem 0;
         @include md {
           padding: 3rem 0;
+        }
+        @include sm {
+          padding: 2rem 0;
+          text-align: center;
+          img {
+            width: 80%;
+            height: auto;
+          }
         }
       }
       &__text {
@@ -241,11 +300,20 @@ html {
         @include md {
           @include text-style($neutral-black, 2.4rem, normal, 600, 3.2rem);
         }
+        @include sm {
+          @include text-style($neutral-black, 1.8rem, normal, 600, 2.2rem);
+          margin-bottom: 1.2rem;
+        }
       }
       &__sub-heading {
         margin-bottom: 3.2rem;
         @include md {
           @include text-style($neutral-black, 1.2rem, normal, 500, 1.6rem);
+          margin-bottom: 2.4rem;
+        }
+        @include sm {
+          @include text-style($neutral-black, 1rem, normal, 500, 1.4rem);
+          margin-bottom: 1.6rem;
         }
       }
     }
@@ -260,6 +328,10 @@ html {
       }
       @include lg {
         padding: 4rem 6rem;
+        @include flexbox($justify: center, $direction: column, $gap: 4rem);
+      }
+      @include sm {
+        padding: 2rem 2rem;
         @include flexbox($justify: center, $direction: column, $gap: 4rem);
       }
 
@@ -295,9 +367,18 @@ html {
           width: 100%;
           place-items: center;
         }
+        @include sm {
+          width: 100%;
+          place-items: center;
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
       }
       &__item {
         @include flexbox($gap: 1.6rem);
+        @include sm {
+          gap: 5rem;
+        }
       }
     }
 
@@ -315,6 +396,9 @@ html {
       @include lg {
         padding: 3rem 4rem;
         display: block;
+      }
+      @include lg {
+        padding: 2rem 2rem;
       }
       &__img {
         img {
@@ -351,6 +435,9 @@ html {
       &__text-footer {
         @include flexbox($justify: space-between, $gap: 3.2rem);
         width: 100%;
+        @include sm {
+          @include flexbox($direction: column, $gap: 3.2rem);
+        }
       }
       &__icon {
         @include flexbox($justify: space-between, $gap: 4.1rem);
@@ -359,6 +446,13 @@ html {
             width: 3.6rem;
             height: 3.6rem;
           }
+        }
+        @include md {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 1rem;
+          place-items: center;
         }
       }
     }
@@ -376,8 +470,11 @@ html {
         @include md {
           display: flex;
           overflow-x: auto;
-          overflow-y: visible;
+          overflow-y: auto;
           height: 34rem;
+        }
+        @include sm {
+          height: 24rem;
         }
       }
       &__card {
@@ -391,7 +488,11 @@ html {
           border-radius: 0.8rem;
           @include lg {
             width: 30rem;
-            height: 20rem;
+            height: auto;
+          }
+          @include sm {
+            width: 20rem;
+            height: auto;
           }
         }
       }
@@ -410,6 +511,11 @@ html {
             width: 18rem;
             font-size: 1.2rem;
           }
+          @include sm {
+            width: 14rem;
+            font-size: 0.8rem;
+            line-height: 1.4rem;
+          }
         }
         button {
           @include flexbox($align: center, $justify: center, $gap: 0.8rem);
@@ -424,6 +530,12 @@ html {
             $direction: column,
             $gap: 1.6rem
           );
+        }
+        @include sm {
+          height: 10rem;
+          gap: 1rem;
+          bottom: -6rem;
+          padding: 1.2rem;
         }
       }
     }
@@ -448,6 +560,9 @@ html {
         width: 100%;
       }
     }
+    @include sm {
+      padding: 2rem 2rem;
+    }
   }
   &__content {
     @include flexbox(
@@ -467,6 +582,9 @@ html {
     @include md {
       @include flexbox($align: flex-start, $justify: flex-start, $gap: 5rem);
       flex-wrap: wrap;
+    }
+    @include sm {
+      padding: 2rem 2rem;
     }
   }
   &__content-left {
@@ -504,6 +622,9 @@ html {
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
     }
+    @include sm {
+      order: 2;
+    }
   }
   &__content-right {
     @include flexbox($align: flex-start, $gap: 3rem);
@@ -522,21 +643,44 @@ html {
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
     }
+    @include sm {
+      @include flexbox(
+        $direction: column,
+        $align: center,
+        $justify: center,
+        $gap: 2rem
+      );
+      order: 1;
+    }
 
     .footer__sm-col {
       @include flexbox($align: flex-start, $direction: column, $gap: 2.4rem);
       width: 16rem;
+      @include sm {
+        width: 100%;
+        gap: 1rem;
+        text-align: center;
+      }
     }
     .footer__lg-col {
       @include flexbox($align: flex-start, $direction: column, $gap: 2.4rem);
       width: 25.5rem;
+      @include sm {
+        width: 100%;
+        gap: 1rem;
+      }
     }
   }
   &__heading {
     color: $neutral-white;
+    width: 100%;
   }
   &__nav-container {
     @include flexbox($align: flex-start, $direction: column, $gap: 1.2rem);
+    width: 100%;
+    li {
+      width: 100%;
+    }
   }
   &__input {
     @include flexbox($justify: space-between);
@@ -554,6 +698,9 @@ html {
     img {
       cursor: pointer;
       opacity: 1;
+    }
+    @include sm {
+      width: 100%;
     }
   }
 }

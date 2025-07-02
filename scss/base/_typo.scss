@@ -8,6 +8,9 @@
   @include lg {
     @include text-style($neutral-black, 3.6rem, normal, 600, 4.4rem);
   }
+  @include sm {
+    @include text-style($neutral-black, 2.8rem, normal, 600, 3.6rem);
+  }
 }
 
 .headline2 {
@@ -18,6 +21,9 @@
   @include lg {
     @include text-style($neutral-black, 2.8rem, normal, 700, 3.6rem);
   }
+  @include sm {
+    @include text-style($neutral-black, 2.4rem, normal, 600, 3.2rem);
+  }
 }
 .headline3 {
   @include text-style($neutral-black, 2.8rem, normal, 700, 3.6rem);
@@ -27,6 +33,9 @@
   @include lg {
     @include text-style($neutral-black, 2rem, normal, 600, 2.8rem);
   }
+  @include sm {
+    @include text-style($neutral-black, 1.6rem, normal, 600, 2.4rem);
+  }
 }
 .headline4 {
   @include text-style($neutral-black, 2rem, normal, 600, 2.8rem);
@@ -35,6 +44,9 @@
   }
   @include lg {
     @include text-style($neutral-black, 1.6rem, normal, 600, 2rem);
+  }
+  @include sm {
+    @include text-style($neutral-black, 1.2rem, normal, 600, 2rem);
   }
 }
 
@@ -46,6 +58,9 @@
   @include lg {
     @include text-style($neutral-black, 1.6rem, normal, 400, 2.4rem);
   }
+  @include sm {
+    @include text-style($neutral-black, 1.2rem, normal, 400, 2rem);
+  }
 }
 .body2--regular {
   @include text-style($neutral-black, 1.6rem, normal, 400, 2.4rem);
@@ -55,6 +70,9 @@
   @include lg {
     @include text-style($neutral-black, 1.4rem, normal, 400, 2rem);
   }
+  @include sm {
+    @include text-style($neutral-black, 1rem, normal, 400, 1.6rem);
+  }
 }
 .body3--regular {
   @include text-style($neutral-black, 1.4rem, normal, 400, 2rem);
@@ -63,6 +81,9 @@
   }
   @include lg {
     @include text-style($neutral-black, 1.2rem, normal, 400, 1.6rem);
+  }
+  @include sm {
+    @include text-style($neutral-black, 0.8rem, normal, 400, 1.4rem);
   }
 }
 .body4--regular {
@@ -76,6 +97,9 @@
   @include lg {
     @include text-style($neutral-black, 1.6rem, normal, 500, 2.4rem);
   }
+  @include sm {
+    @include text-style($neutral-black, 1.4rem, normal, 500, 2rem);
+  }
 }
 .body2--medium {
   @include text-style($neutral-black, 1.6rem, normal, 500, 2.4rem);
@@ -88,6 +112,9 @@
   @include md {
     @include text-style($neutral-black, 1.2rem, normal, 500, 1.6rem);
   }
+  @include sm {
+    @include text-style($neutral-black, 1rem, normal, 500, 1.4rem);
+  }
 }
 .body3--medium {
   @include text-style($neutral-black, 1.4rem, normal, 500, 2rem);
@@ -96,6 +123,9 @@
   }
   @include lg {
     @include text-style($neutral-black, 1.2rem, normal, 500, 1.6rem);
+  }
+  @include sm {
+    @include text-style($neutral-black, 0.8rem, normal, 500, 1.4rem);
   }
 }
 .body4--medium {
