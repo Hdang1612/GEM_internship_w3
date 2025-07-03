@@ -1563,7 +1563,7 @@ li {
   align-items: center;
   justify-content: flex-start;
   gap: 0.8rem;
-  color: #717171;
+  color: #f5f7fa;
 }
 .footer__content-left .footer__copyright-info p {
   width: 35rem;

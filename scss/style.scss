@@ -617,7 +617,7 @@
     }
     .footer__copyright-info {
       @include flexbox($align: center, $direction: column, $gap: 0.8rem);
-      color: $neutral-grey;
+      color: $neutral-silver;
       p {
         width: 35rem;
         @include xl {
