@@ -1,5 +1,5 @@
 const headerComponent = document.querySelector(".header-container");
-fetch("../component/header.html")
+fetch("/w3_30-6/component/header.html")
   .then((res) => res.text())
   .then((data) => {
     headerComponent.innerHTML = data;
