@@ -1694,6 +1694,9 @@ li {
   width: 100%;
 }
 .footer__nav-container {
+  width: 100%;
+}
+.footer__nav-container ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1701,7 +1704,7 @@ li {
   gap: 1.2rem;
   width: 100%;
 }
-.footer__nav-container li {
+.footer__nav-container ul li {
   width: 100%;
 }
 .footer__input {
