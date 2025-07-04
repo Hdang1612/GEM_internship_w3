@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="../scss/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,178 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <div class="header__logo">
-          <a href="./index.html"
-            ><img src="./assets/full-logo.svg" alt="logo"
-          /></a>
-        </div>
-        <div class="header__nav">
-          <ul>
-            <li class="header__nav-item body2--medium">
-              <a href="./index.html">Home</a>
-            </li>
-            <li class="header__nav-item body2--medium">
-              <a href="./pages/service.html">Service</a>
-            </li>
-            <li class="header__nav-item body2--medium">
-              <a href="./pages/feature.html">Feature</a>
-            </li>
-            <li class="header__nav-item body2--medium">
-              <a href="./pages/product.html">Product</a>
-            </li>
-            <li class="header__nav-item body2--medium">
-              <a href="./pages/testimonial.html">Testimonial</a>
-            </li>
-            <li class="header__nav-item body2--medium">
-              <a href="./pages/faq.html">FAQ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header__regis">
-          <button class="btn btn__tertiary btn__tertiary--default">
-            Login
-          </button>
-          <button class="signup-btn btn btn__primary btn__primary--default">
-            Sign up
-          </button>
-        </div>
-        <div class="header__menu-icon">
-          <img src="./assets/menu.svg" width="28px" height="28px" alt="" />
-        </div>
-      </div>
-      <div class="header__menu-hidden">
-        <div class="header__close-btn">
-          <img src="./assets/close.svg" alt="" />
-        </div>
-        <div class="header__menu-list">
-          <a href="./index.html" class="header__menu-item body1--medium">Home</a
-          ><a
-            href="./pages/service.html"
-            class="header__menu-item body1--medium"
-            >Service</a
-          ><a
-            href="./pages/feature.html"
-            class="header__menu-item body1--medium"
-            >Feature</a
-          ><a
-            href="./pages/product.html"
-            class="header__menu-item body1--medium"
-            >Product</a
-          ><a
-            href="./pages/testimonial.html"
-            class="header__menu-item body1--medium"
-            >Testimonial</a
-          ><a href="./pages/faq.html" class="header__menu-item body1--medium"
-            >FAQ</a
-          ><a href="" class="header__menu-item body1--medium">Signup</a
-          ><a href="" class="header__menu-item body1--medium">Log in</a>
-        </div>
-      </div>
-      <div class="slider-container">
-        <div class="slider">
-          <div class="slider__item">
-            <div class="slider__text">
-              <div class="slider__heading headline1">
-                <p>
-                  Lessons and insights <br />
-                  <span>from 8 years 11</span>
-                </p>
-              </div>
-              <div class="slider__sub-heading body2--regular">
-                <p>
-                  Where to grow your business as a photographer: site or social
-                  media?
-                </p>
-              </div>
-              <div
-                class="register-btn btn btn__primary btn__primary--default body2--medium"
-              >
-                Register
-              </div>
-            </div>
-            <div class="slider__img">
-              <img src="./assets/slider-img.svg" alt="" />
-            </div>
-          </div>
-          <div class="slider__item">
-            <div class="slider__text">
-              <div class="slider__heading headline1">
-                <p>
-                  Lessons and insights <br />
-                  <span>from 8 years 2222</span>
-                </p>
-              </div>
-              <div class="slider__sub-heading body2--regular">
-                <p>
-                  Where to grow your business as a photographer: site or social
-                  media?
-                </p>
-              </div>
-              <div
-                class="register-btn btn btn__primary btn__primary--default body2--medium"
-              >
-                Register
-              </div>
-            </div>
-            <div class="slider__img">
-              <img src="./assets/slider-img.svg" alt="" />
-            </div>
-          </div>
-          <div class="slider__item">
-            <div class="slider__text">
-              <div class="slider__heading headline1">
-                <p>
-                  Lessons and insights <br />
-                  <span>from 8 years 333</span>
-                </p>
-              </div>
-              <div class="slider__sub-heading body2--regular">
-                <p>
-                  Where to grow your business as a photographer: site or social
-                  media?
-                </p>
-              </div>
-              <div
-                class="register-btn btn btn__primary btn__primary--default body2--medium"
-              >
-                Register
-              </div>
-            </div>
-            <div class="slider__img">
-              <img src="./assets/slider-img.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="slider__dot-container">
-          <img
-            onclick="goToSlide(0)"
-            src="./assets/dot.svg"
-            alt=""
-            class="dot slider__dot--active"
-          />
-          <img
-            onclick="goToSlide(1)"
-            src="./assets/dot.svg"
-            alt=""
-            class="dot"
-          />
-          <img
-            onclick="goToSlide(2)"
-            src="./assets/dot.svg"
-            alt=""
-            class="dot"
-          />
-        </div>
-        <div class="slider__btn-container">
-          <div class="pre-btn" onclick="prevSlide()">
-            <img src="./assets/arrow-left.svg" alt="" />
-          </div>
-          <div class="next-btn" onclick="nextSlide()">
-            <img src="./assets/arrow-right.svg" alt="" />
-          </div>
-        </div>
-      </div>
+      <div class="header-container"></div>
       <div class="content">
         <div class="section clients">
           <div class="section__header">
@@ -195,13 +24,13 @@
             </div>
           </div>
           <div class="clients-logo">
-            <img src="./assets/client1.svg" alt="" />
-            <img src="./assets/client2.svg" alt="" />
-            <img src="./assets/client3.svg" alt="" />
-            <img src="./assets/client4.svg" alt="" />
-            <img src="./assets/client5.svg" alt="" />
-            <img src="./assets/client6.svg" alt="" />
-            <img src="./assets/client7.svg" alt="" />
+            <img src="../assets/client1.svg" alt="" />
+            <img src="../assets/client2.svg" alt="" />
+            <img src="../assets/client3.svg" alt="" />
+            <img src="../assets/client4.svg" alt="" />
+            <img src="../assets/client5.svg" alt="" />
+            <img src="../assets/client6.svg" alt="" />
+            <img src="../assets/client7.svg" alt="" />
           </div>
         </div>
         <div class="section community">
@@ -216,7 +45,7 @@
           <div class="community__card-container">
             <div class="community__card">
               <div class="community__card-img">
-                <img src="./assets/membership.svg" alt="" />
+                <img src="../assets/membership.svg" alt="" />
               </div>
               <div class="community__heading headline3">
                 <p>Membership Organisations</p>
@@ -230,7 +59,7 @@
             </div>
             <div class="community__card">
               <div class="community__card-img">
-                <img src="./assets/national-association.svg" alt="" />
+                <img src="../assets/national-association.svg" alt="" />
               </div>
               <div class="community__heading headline3">
                 <p>National Associations</p>
@@ -244,7 +73,7 @@
             </div>
             <div class="community__card">
               <div class="community__card-img">
-                <img src="./assets/club&group.svg" alt="" />
+                <img src="../assets/club&group.svg" alt="" />
               </div>
               <div class="community__heading headline3">
                 <p>Clubs And Groups</p>
@@ -261,7 +90,7 @@
         <div class="content__body">
           <div class="section unlock">
             <div class="unlock__img">
-              <img src="./assets/rafiki.svg" alt="" />
+              <img src="../assets/rafiki.svg" alt="" />
             </div>
             <div class="unlock__text">
               <div class="unlock__heading headline2">
@@ -296,7 +125,7 @@
             <div class="achievements__counts">
               <div class="achievements__item">
                 <div class="achievements__img">
-                  <img src="./assets/member.svg" alt="" />
+                  <img src="../assets/member.svg" alt="" />
                 </div>
                 <div class="achievements__info">
                   <div class="item-heading headline3"><p>2,245,341</p></div>
@@ -307,7 +136,7 @@
               </div>
               <div class="achievements__item">
                 <div class="achievements__img">
-                  <img src="./assets/club.svg" alt="" />
+                  <img src="../assets/club.svg" alt="" />
                 </div>
                 <div class="achievements__info">
                   <div class="item-heading headline3"><p>2,245,341</p></div>
@@ -318,7 +147,7 @@
               </div>
               <div class="achievements__item">
                 <div class="achievements__img">
-                  <img src="./assets/event-booking.svg" alt="" />
+                  <img src="../assets/event-booking.svg" alt="" />
                 </div>
                 <div class="achievements__info">
                   <div class="item-heading headline3"><p>2,245,341</p></div>
@@ -329,7 +158,7 @@
               </div>
               <div class="achievements__item">
                 <div class="achievements__img">
-                  <img src="./assets/payment.svg" alt="" />
+                  <img src="../assets/payment.svg" alt="" />
                 </div>
                 <div class="achievements__info">
                   <div class="item-heading headline3"><p>2,245,341</p></div>
@@ -342,7 +171,7 @@
           </div>
           <div class="section calenders">
             <div class="calenders__img">
-              <img src="./assets/pana.svg" alt="" />
+              <img src="../assets/pana.svg" alt="" />
             </div>
             <div class="calenders__text">
               <div class="calenders__heading headline2">
@@ -370,7 +199,7 @@
           </div>
           <div class="section customers">
             <div class="customers__img">
-              <img src="./assets/customer.jpg" alt="" />
+              <img src="../assets/customer.jpg" alt="" />
             </div>
             <div class="customers__text">
               <div class="customers__text-content">
@@ -397,18 +226,18 @@
               </div>
               <div class="customers__text-footer">
                 <div class="customers__icon">
-                  <img src="./assets/client1.svg" alt="" />
-                  <img src="./assets/client2.svg" alt="" />
-                  <img src="./assets/client3.svg" alt="" />
-                  <img src="./assets/client4.svg" alt="" />
-                  <img src="./assets/client5.svg" alt="" />
+                  <img src="../assets/client1.svg" alt="" />
+                  <img src="../assets/client2.svg" alt="" />
+                  <img src="../assets/client3.svg" alt="" />
+                  <img src="../assets/client4.svg" alt="" />
+                  <img src="../assets/client5.svg" alt="" />
                 </div>
                 <button
                   class="customer__nav btn btn__tertiary btn__tertiary--default headline4"
                 >
                   Meet all customers
                   <span
-                    ><img src="./assets/arrow-right-icon.svg" alt=""
+                    ><img src="../assets/arrow-right-icon.svg" alt=""
                   /></span>
                 </button>
               </div>
@@ -427,7 +256,7 @@
             <div class="community-updates__content">
               <div class="community-updates__card">
                 <div class="community-updates__img">
-                  <img src="./assets/comunity-updates1.jpg" alt="" />
+                  <img src="../assets/comunity-updates1.jpg" alt="" />
                 </div>
                 <div class="community-updates__card-info">
                   <p class="headline4">
@@ -438,14 +267,14 @@
                   >
                     Read more
                     <span
-                      ><img src="./assets/arrow-right-icon.svg" alt=""
+                      ><img src="../assets/arrow-right-icon.svg" alt=""
                     /></span>
                   </button>
                 </div>
               </div>
               <div class="community-updates__card">
                 <div class="community-updates__img">
-                  <img src="./assets/comunity-updates2.jpg" alt="" />
+                  <img src="../assets/comunity-updates2.jpg" alt="" />
                 </div>
                 <div class="community-updates__card-info">
                   <p class="headline4">
@@ -457,14 +286,14 @@
                   >
                     Read more
                     <span
-                      ><img src="./assets/arrow-right-icon.svg" alt=""
+                      ><img src="../assets/arrow-right-icon.svg" alt=""
                     /></span>
                   </button>
                 </div>
               </div>
               <div class="community-updates__card">
                 <div class="community-updates__img">
-                  <img src="./assets/comunity-updates3.jpg" alt="" />
+                  <img src="../assets/comunity-updates3.jpg" alt="" />
                 </div>
                 <div class="community-updates__card-info">
                   <p class="headline4">
@@ -475,7 +304,7 @@
                   >
                     Read more
                     <span
-                      ><img src="./assets/arrow-right-icon.svg" alt=""
+                      ><img src="../assets/arrow-right-icon.svg" alt=""
                     /></span>
                   </button>
                 </div>
@@ -490,24 +319,24 @@
           <button class="btn btn__primary btn__primary--default body2--medium">
             Get a Demo
             <span
-              ><img src="./assets/arrow-right-icon-white.svg" alt=""
+              ><img src="../assets/arrow-right-icon-white.svg" alt=""
             /></span>
           </button>
         </div>
         <div class="footer__content">
           <div class="footer__content-left">
             <div class="footer__logo">
-              <img src="./assets/Logo-footer.svg" alt="" />
+              <img src="../assets/Logo-footer.svg" alt="" />
             </div>
             <div class="footer__copyright-info body3--regular">
               <p>Copyright © 2020 Nexcent ltd.</p>
               <p>All rights reserved</p>
             </div>
             <div class="footer__social-icon">
-              <img src="./assets/insta.svg" alt="" />
-              <img src="./assets/social2.svg" alt="" />
-              <img src="./assets/social3.svg" alt="" />
-              <img src="./assets/social4.svg" alt="" />
+              <img src="../assets/insta.svg" alt="" />
+              <img src="../assets/social2.svg" alt="" />
+              <img src="../assets/social3.svg" alt="" />
+              <img src="../assets/social4.svg" alt="" />
             </div>
           </div>
           <div class="footer__content-right">
@@ -541,13 +370,13 @@
                   placeholder="Your email address"
                   type="text"
                 />
-                <img src="./assets/send-icon.svg" alt="" />
+                <img src="../assets/send-icon.svg" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="main.js"></script>
+    <script src="../main.js"></script>
   </body>
 </html>
